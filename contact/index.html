@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Hex, Studios, Hex Studios, Momentum, Unreal Engine, UE, Heelyx23, Heelyx, Hilex, Hilex23">
+    <meta name="description" content="Hex Studios is an independent game development studio based in Europe. We focus on creating games with engaging mechanics and original concepts, driven by passion and creativity.">
+    <meta name="author" content="Manuel Maiani">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Hex Studios - Contact" />
+    <meta property="og:description" content="Hex Studios is an independent game development studio based in Europe. We focus on creating games with engaging mechanics and original concepts, driven by passion and creativity." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://heelyx23.github.io/contact" />
+    <meta property="og:image" content="https://heelyx23.github.io/assets/hex_studios_logo.png" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
+    <title>Hex Studios - Contact</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="/assets/hex_studios_logo.png">
+    <script src="https://kit.fontawesome.com/773ee53ac1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="tooltips">
+    <div class="tooltip home"><p>Home</p></div>
+    <div class="tooltip team"><p>Team</p></div>
+    <div class="tooltip projects"><p>Projects</p></div>
+    <div class="tooltip-active contact"><p>Contact</p></div>
+    <div class="tooltip legal"><p>Legal</p></div>
+</div>
+<div class="navbar">
+    <a class="nav-link home-nav" href="/"><i class="fa-solid fa-house fa-2xl"></i></a>
+    <a class="nav-link team-nav" href="/team"><i class="fa-solid fa-users fa-2xl"></i></a>
+    <a class="nav-link projects-nav" href="/projects"><i class="fa-solid fa-list fa-2xl"></i></a>
+    <a class="active contact-nav" href="/contact"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+    <a class="nav-link legal-nav" href="/legal"><i class="fa-solid fa-scale-balanced fa-2xl"></i></a>
+</div>
+<div class="main">
+    <h1 class="title">Hex Studios</h1>
+    <h2 class="title2">Contact</h2>
+    <form action="https://formspree.io/f/mgvzpaoe" class="fs-form" method="POST" enctype="multipart/form-data" target="_top">
+        <div class="fs-field">
+            <label class="fs-label" for="name">Name</label>
+            <input class="fs-input" id="name" name="name" required />
+        </div>
+        <div class="fs-field">
+            <label class="fs-label" for="email">Email</label>
+            <input class="fs-input" id="email" name="email" required />
+        </div>
+        <div class="fs-field">
+            <label class="fs-label" for="message">Message</label>
+            <textarea class="fs-textarea" id="message" name="message" required></textarea>
+        </div>
+        <div class="fs-button-group">
+            <button class="fs-button" type="submit">Send</button>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

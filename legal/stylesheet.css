@@ -9,7 +9,7 @@ body {
     font-family: "Exo 2", sans-serif;
     font-weight: normal;
     font-style: normal;
-    background-image: url("/assets/menu_image_1080p_blurred.png");
+    background-image: url("assets/hex_studios_banner.png");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -189,4 +189,5 @@ body:has(.contact-nav:hover) .contact {
     font-size: 20px;
     margin: 25px;
     transition: .2s;
+
 }

@@ -24,6 +24,10 @@ body:has(.home-nav:hover) .home {
     opacity: 1;
 }
 
+body:has(.team-nav:hover) .team {
+    opacity: 1;
+}
+
 body:has(.projects-nav:hover) .projects {
     opacity: 1;
 }
@@ -233,11 +237,13 @@ body:has(.legal-nav:hover) .legal {
     font-size: 25px;
     margin-bottom: 5px;
     font-weight: bold;
+    transition: .2s;
 }
 
 .name {
     font-size: 20px;
     margin-top: 0;
+    transition: .2s;
 }
 
 .team-socials {
@@ -258,6 +264,4 @@ body:has(.legal-nav:hover) .legal {
     color: #111111;
     background-color: #ffffff;
     transition: .2s;
-
 }
-

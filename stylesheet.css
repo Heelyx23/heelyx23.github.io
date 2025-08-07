@@ -20,6 +20,10 @@ body {
     align-items: center;
 }
 
+body:has(.home-nav:hover) .home {
+    opacity: 1;
+}
+
 body:has(.team-nav:hover) .team {
     opacity: 1;
 }
@@ -167,8 +171,43 @@ body:has(.legal-nav:hover) .legal {
     transition: .2s;
 }
 
+.main-404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 25px;
+    color: #ffffff;
+    width: 100vh;
+    height: 100vh;
+    border: #ffffff solid 3px;
+    border-radius: 10px;
+    outline: #111111 solid 3px;
+    outline-offset: 10px;
+    transition: .2s;
+}
+
 .title {
     font-size: 50px;
+    margin: 25px;
+    transition: .2s;
+}
+
+.title-404 {
+    font-size: 125px;
+    margin: 25px;
+    transition: .2s;
+}
+
+.title2 {
+    font-size: 35px;
+    margin: 0;
+    transition: .2s;
+}
+
+.title2-404 {
+    font-size: 75px;
     margin: 25px;
     transition: .2s;
 }
@@ -186,3 +225,35 @@ body:has(.legal-nav:hover) .legal {
 
 }
 
+.about-404 {
+    font-size: 25px;
+    margin: 25px;
+    transition: .2s;
+}
+
+.back {
+    text-decoration: none;
+    transition: .2s;
+}
+
+.back-button {
+    color: #ffffff;
+    background-color: #111111;
+    border: #ffffff solid 3px;
+    outline: #111111 solid 3px;
+    outline-offset: 10px;
+    border-radius: 10px;
+    padding: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 25px;
+    transition: .2s;
+}
+
+.back-button:hover {
+    color: #111111;
+    background-color: #ffffff;
+    border: #111111 solid 3px;
+    outline: #ffffff solid 3px;
+    transition: .2s;
+}

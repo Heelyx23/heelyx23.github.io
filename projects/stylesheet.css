@@ -28,6 +28,10 @@ body:has(.team-nav:hover) .team {
     opacity: 1;
 }
 
+body:has(.projects-nav:hover) .projects {
+    opacity: 1;
+}
+
 body:has(.contact-nav:hover) .contact {
     opacity: 1;
 }

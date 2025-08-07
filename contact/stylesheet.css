@@ -20,6 +20,10 @@ body {
     align-items: center;
 }
 
+body:has(.home-nav:hover) .home {
+    opacity: 1;
+}
+
 body:has(.team-nav:hover) .team {
     opacity: 1;
 }
@@ -28,7 +32,7 @@ body:has(.projects-nav:hover) .projects {
     opacity: 1;
 }
 
-body:has(.home-nav:hover) .home {
+body:has(.contact-nav:hover) .contact {
     opacity: 1;
 }
 
@@ -220,32 +224,6 @@ textarea {
     transition: .2s;
 }
 
-.fs-button-group {
-    display: flex;
-    flex-direction: row-reverse;
-    column-gap: 25px;
-    transition: .2s;
-}
-
-.fs-button {
-    background-color: #ffffff;
-    border: #111111 solid 3px;
-    border-radius: 10px;
-    color: #111111;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 15px 25px;
-    transition: .2s;
-}
-
-.fs-button:hover {
-    background-color: #111111;
-    color: #ffffff;
-    transition: .2s;
-    border: #ffffff solid 3px;
-}
-
 .fs-input,
 .fs-select {
     appearance: none;
@@ -286,4 +264,30 @@ textarea {
     outline: #ffffff solid 3px;
     outline-offset: 3px;
     transition: .2s;
+}
+
+.fs-button-group {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 25px;
+    transition: .2s;
+}
+
+.fs-button {
+    background-color: #ffffff;
+    border: #111111 solid 3px;
+    border-radius: 10px;
+    color: #111111;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    transition: .2s;
+}
+
+.fs-button:hover {
+    background-color: #111111;
+    color: #ffffff;
+    transition: .2s;
+    border: #ffffff solid 3px;
 }

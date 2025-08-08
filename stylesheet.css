@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
 html, body {
+    min-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -10,34 +13,14 @@ body {
     font-weight: normal;
     font-style: normal;
     background-image: url("assets/hex_studios_banner.png");
-    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-body:has(.home-nav:hover) .home {
-    opacity: 1;
-}
-
-body:has(.team-nav:hover) .team {
-    opacity: 1;
-}
-
-body:has(.projects-nav:hover) .projects {
-    opacity: 1;
-}
-
-body:has(.contact-nav:hover) .contact {
-    opacity: 1;
-}
-
-body:has(.legal-nav:hover) .legal {
-    opacity: 1;
 }
 
 .tooltips {
@@ -51,14 +34,14 @@ body:has(.legal-nav:hover) .legal {
 }
 
 .tooltip-active {
-    background-color: #ffffff;
-    color: #111111;
+    background-color: #111111;
+    color: #ffffff;
     padding: 0 25px;
-    border: #111111 solid 3px;
+    border: #ffffff solid 3px;
     border-radius: 10px;
     font-size: 20px;
     position: relative;
-    opacity: 1;
+    opacity: 0;
     transition: .2s;
 }
 
@@ -114,6 +97,34 @@ body:has(.legal-nav:hover) .legal {
     outline: #111111 solid 3px;
     outline-offset: 10px;
     transition: .2s;
+}
+
+.navbar1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    width: 500px;
+    margin: 0 0 0 250px;
+    padding: 0;
+    transition: .2s;
+}
+
+.navbar2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    width: 500px;
+    margin: 0 250px 0 0;
+    padding: 0;
+    transition: .2s;
+}
+
+.navbar i {
+    font-size: 32px;
 }
 
 .active {
@@ -179,8 +190,8 @@ body:has(.legal-nav:hover) .legal {
     text-align: center;
     margin: 25px;
     color: #ffffff;
-    width: 100vh;
-    height: 100vh;
+    width: 1000px;
+    height: 1000px;
     border: #ffffff solid 3px;
     border-radius: 10px;
     outline: #111111 solid 3px;
@@ -256,4 +267,179 @@ body:has(.legal-nav:hover) .legal {
     border: #111111 solid 3px;
     outline: #ffffff solid 3px;
     transition: .2s;
+}
+
+@media only screen and (min-width: 900px) {
+    body:has(.home-nav:hover) .home {
+        opacity: 1;
+    }
+    body:has(.team-nav:hover) .team {
+        opacity: 1;
+    }
+    body:has(.projects-nav:hover) .projects {
+        opacity: 1;
+    }
+    body:has(.contact-nav:hover) .contact {
+        opacity: 1;
+    }
+    body:has(.legal-nav:hover) .legal {
+        opacity: 1;
+    }
+    .tooltip-active {
+        background-color: #ffffff;
+        color: #111111;
+        padding: 0 25px;
+        border: #111111 solid 3px;
+        border-radius: 10px;
+        font-size: 20px;
+        position: relative;
+        opacity: 1;
+        transition: .2s;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .tooltips {
+        width: 665px;
+    }
+    .navbar {
+        width: 665px;
+        transition: .2s;
+    }
+    .main, .main-404 {
+        width: 665px;
+        transition: .2s;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .tooltips {
+        display: none;
+    }
+    .navbar {
+        width: 600px;
+        transition: .2s;
+    }
+    .navbar i {
+        font-size: 32px;
+    }
+    .active, .nav-link {
+        margin: 20px;
+        padding: 20px;
+    }
+    .main, .main-404 {
+        width: 600px;
+        transition: .2s;
+    }
+    .title {
+        font-size: 45px;
+        transition: .2s;
+    }
+    .title-404 {
+        font-size: 100px;
+    }
+    .title2-404 {
+        font-size: 50px;
+    }
+    .logo {
+        height: 256px;
+        transition: .2s;
+    }
+    .about {
+        font-size: 20px;
+        transition: .2s;
+    }
+    .about-404 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .tooltips {
+        display: none;
+    }
+    .navbar {
+        width: 400px;
+        transition: .2s;
+    }
+    .navbar i {
+        font-size: 24px;
+    }
+    .active, .nav-link {
+        margin: 10px;
+        padding: 15px;
+    }
+    .main, .main-404 {
+        width: 400px;
+        transition: .2s;
+    }
+    .title {
+        font-size: 35px;
+        transition: .2s;
+    }
+    .title-404 {
+        font-size: 75px;
+    }
+    .title2-404 {
+        font-size: 40px;
+    }
+    .logo {
+        height: 172px;
+        transition: .2s;
+    }
+    .about {
+        font-size: 17.5px;
+        transition: .2s;
+    }
+    .about-404 {
+        font-size: 20px;
+    }
+    .back-button {
+        font-size: 20px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .tooltips {
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        height: 170px;
+        width: 300px;
+        transition: .2s;
+    }
+    .navbar1, .navbar2 {
+        margin: 0;
+    }
+    .main, .main-404 {
+        width: 300px;
+        transition: .2s;
+    }
+    .title {
+        font-size: 30px;
+        transition: .2s;
+    }
+    .title-404 {
+        font-size: 50px;
+    }
+    .title2-404 {
+        font-size: 35px;
+    }
+    .logo {
+        height: 140px;
+        transition: .2s;
+    }
+    .about {
+        font-size: 15px;
+        transition: .2s;
+    }
+    .about-404 {
+        font-size: 15px;
+    }
+    .back-button {
+        font-size: 15px;
+        padding: 15px;
+    }
 }

@@ -1,203 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
-
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: "Exo 2", sans-serif;
-    font-weight: normal;
-    font-style: normal;
     background-image: url("/assets/hex_studios_banner.png");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-body:has(.home-nav:hover) .home {
-    opacity: 1;
-}
-
-body:has(.team-nav:hover) .team {
-    opacity: 1;
-}
-
-body:has(.projects-nav:hover) .projects {
-    opacity: 1;
-}
-
-body:has(.contact-nav:hover) .contact {
-    opacity: 1;
-}
-
-body:has(.legal-nav:hover) .legal {
-    opacity: 1;
-}
-
-.tooltips {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    width: 1000px;
-    transition: .2s;
-}
-
-.tooltip-active {
-    background-color: #ffffff;
-    color: #111111;
-    padding: 0 25px;
-    border: #111111 solid 3px;
-    border-radius: 10px;
-    font-size: 20px;
-    position: relative;
-    opacity: 1;
-    transition: .2s;
-}
-
-.tooltip {
-    background-color: #111111;
-    color: #ffffff;
-    padding: 0 25px;
-    border: #ffffff solid 3px;
-    border-radius: 10px;
-    font-size: 20px;
-    position: relative;
-    opacity: 0;
-    transition: .2s;
-}
-
-.home {
-    right: 47.5px;
-    top: 3.5px;
-}
-
-.team {
-    right: 13.5px;
-    top: 3.5px;
-}
-
-.projects {
-    left: 10px;
-    top: 3.5px;
-}
-
-.contact {
-    left: 23.5px;
-    top: 3.5px;
-}
-
-.legal {
-    left: 47.5px;
-    top: 3.5px;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 25px;
-    background-color: #111111;
-    color: #ffffff;
-    height: 85px;
-    width: 1000px;
-    border: #ffffff solid 3px;
-    border-radius: 10px;
-    outline: #111111 solid 3px;
-    outline-offset: 10px;
-    transition: .2s;
-}
-
-.active {
-    color: #111111;
-    background-color: #ffffff;
-    margin: 25px;
-    padding: 25px;
-    border-radius: 10px;
-    transition: .2s;
-}
-
-.active:hover{
-    background-color: #999999;
-    transition: .2s;
-}
-
-.active:active {
-    background-color: #888888;
-    transition: .2s;
-}
-
-.nav-link {
-    color: #ffffff;
-    margin: 25px;
-    padding: 25px;
-    border-radius: 10px;
-    transition: .2s;
-}
-
-.nav-link:hover {
-    color: #111111;
-    background-color: #ffffff;
-    transition: .2s;
-}
-
-.nav-link:active {
-    background-color: #999999;
-    transition: .2s;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 25px;
-    background-color: #111111;
-    color: #ffffff;
-    width: 1000px;
-    border: #ffffff solid 3px;
-    border-radius: 10px;
-    outline: #111111 solid 3px;
-    outline-offset: 10px;
-    transition: .2s;
-}
-
-.main-404 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 25px;
-    color: #ffffff;
-    width: 100vh;
-    height: 100vh;
-    border: #ffffff solid 3px;
-    border-radius: 10px;
-    outline: #111111 solid 3px;
-    outline-offset: 10px;
-    transition: .2s;
-}
-
-.title {
-    font-size: 50px;
-    margin: 25px;
-    transition: .2s;
-}
-
-.title-404 {
-    font-size: 125px;
-    margin: 25px;
-    transition: .2s;
 }
 
 .title2 {
@@ -206,53 +8,20 @@ body:has(.legal-nav:hover) .legal {
     transition: .2s;
 }
 
-.title2-404 {
-    font-size: 75px;
-    margin: 25px;
-    transition: .2s;
+@media only screen and (max-width: 900px) {
+    .title2 {
+        font-size: 30px;
+    }
 }
 
-.logo {
-    height: 384px;
-    margin: 25px;
-    transition: .2s;
+@media only screen and (max-width: 700px) {
+    .title2 {
+        font-size: 27.5px;
+    }
 }
 
-.about {
-    font-size: 20px;
-    margin: 25px;
-    transition: .2s;
-}
-
-.about-404 {
-    font-size: 25px;
-    margin: 25px;
-    transition: .2s;
-}
-
-.back {
-    text-decoration: none;
-    transition: .2s;
-}
-
-.back-button {
-    color: #ffffff;
-    background-color: #111111;
-    border: #ffffff solid 3px;
-    outline: #111111 solid 3px;
-    outline-offset: 10px;
-    border-radius: 10px;
-    padding: 25px;
-    font-size: 25px;
-    font-weight: bold;
-    margin: 25px;
-    transition: .2s;
-}
-
-.back-button:hover {
-    color: #111111;
-    background-color: #ffffff;
-    border: #111111 solid 3px;
-    outline: #ffffff solid 3px;
-    transition: .2s;
+@media only screen and (max-width: 450px) {
+    .title2 {
+        font-size: 25px;
+    }
 }

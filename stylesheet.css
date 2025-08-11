@@ -12,15 +12,21 @@ body {
     font-family: "Exo 2", sans-serif;
     font-weight: normal;
     font-style: normal;
-    background-image: url("assets/hex_studios_banner.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("assets/hex_studios_banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 }
 
 .tooltips {

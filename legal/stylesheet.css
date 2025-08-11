@@ -8,6 +8,16 @@ body {
     transition: .2s;
 }
 
+.link {
+    color: #999999;
+    transition: .2s;
+}
+
+.link:hover {
+    color: #ffffff;
+    transition: .2s;
+}
+
 @media only screen and (max-width: 900px) {
     .title2 {
         font-size: 30px;

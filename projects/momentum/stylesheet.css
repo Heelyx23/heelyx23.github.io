@@ -1,5 +1,5 @@
 body {
-    background-image: url("/assets/menu_image_1080p.png");
+    background-image: url("/assets/menu_image_1080p.png") !important;
 }
 
 .title2 {

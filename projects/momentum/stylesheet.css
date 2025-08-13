@@ -1,4 +1,4 @@
-body {
+body::before {
     background-image: url("/assets/menu_image_1080p.png") !important;
 }
 
